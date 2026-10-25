@@ -1,0 +1,484 @@
+{
+  "generated_at": "2026-10-25T10:07:06+00:00",
+  "seed": 42,
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "executable": "D:\\Development\\python_programming\\Data_Analisys_CP\\.venv\\Scripts\\python.exe",
+    "seed": 42,
+    "packages": {
+      "pandas": "3.1.0",
+      "numpy": "2.5.4",
+      "matplotlib": "3.11.2",
+      "seaborn": "0.13.2",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "jupyterlab": "4.6.4",
+      "ipykernel": "7.4.0",
+      "nbconvert": "7.17.2",
+      "nbformat": "5.11.1"
+    }
+  },
+  "source": {
+    "name": "RuReviews",
+    "url": "https://github.com/sismetanin/rureviews",
+    "commit": "2f6e61d30dc6c58ba47dce72e5803e1f0a3f38a7",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/sismetanin/rureviews/blob/2f6e61d30dc6c58ba47dce72e5803e1f0a3f38a7/LICENSE",
+    "paper_doi": "10.1109/CBI.2019.00062",
+    "access_date": "2026-10-25",
+    "file": "women-clothing-accessories.3-class.balanced.csv",
+    "local_path": "data\\women-clothing-accessories.3-class.balanced.csv",
+    "size_bytes": 21781685,
+    "sha256": "db226708d966a1506560136ef85b33ea326eaf6119465d4b1edb5bf9395330fd",
+    "git_blob_sha": "db9fbf29f256aadf3b80ed8c911541a8b867a2dc",
+    "source_columns": [
+      "review",
+      "sentiment"
+    ],
+    "diagnostic_columns": [
+      "sentiment_raw",
+      "sentiment",
+      "line_start",
+      "line_end",
+      "n_physical_lines"
+    ],
+    "physical_lines": 101893,
+    "line_endings": {
+      "crlf": 8452,
+      "lf": 98453,
+      "cr_only": 3440,
+      "nel": 14
+    }
+  },
+  "dataset": {
+    "rows": 90000,
+    "columns_in_file": 2,
+    "columns_in_dataframe_at_load": 6,
+    "class_counts_raw": {
+      "negative": 30000,
+      "neautral": 30000,
+      "positive": 30000
+    },
+    "class_counts": {
+      "negative": 30000,
+      "neutral": 30000,
+      "positive": 30000
+    },
+    "multiline_records": 4661,
+    "tab_records": 4,
+    "whitespace_only_records": 1
+  },
+  "quality": {
+    "exact_empty": 0,
+    "whitespace_only": 1,
+    "replacement_char": 0,
+    "control_chars": 19,
+    "zero_width_or_nbsp": 72,
+    "html_tags": 1,
+    "urls": 128,
+    "digits": 31874,
+    "latin": 14479,
+    "no_cyrillic": 1262,
+    "no_cyrillic_without_mojibake": 1243,
+    "c1_rows": 19,
+    "mojibake_rows": 19,
+    "mojibake_c1_chars": 662,
+    "short_lt_10": 1451,
+    "short_lt_3": 187
+  },
+  "duplicates": {
+    "exact_duplicate_rows": 2250,
+    "exact_duplicate_groups": 886,
+    "duplicate_text_rows": 2679,
+    "unique_texts": 87321,
+    "texts_with_multiple_labels": 388,
+    "normalized_duplicate_rows": 4959,
+    "normalized_duplicate_groups": 1129
+  },
+  "split_diagnostic": {
+    "type": "hypothetical stratified 80/20 random split; not a final split",
+    "test_rows": 18000,
+    "exact_text_overlap_rows": 659,
+    "exact_text_overlap_share_pct": 3.66,
+    "normalized_text_overlap_rows": 1176,
+    "normalized_text_overlap_share_pct": 6.53
+  },
+  "text_length": {
+    "chars": {
+      "n": 90000.0,
+      "mean": 130.13076666666666,
+      "std": 126.18719732629461,
+      "min": 1.0,
+      "p05": 18.0,
+      "p25": 51.0,
+      "median": 92.0,
+      "p75": 164.0,
+      "p95": 372.0,
+      "p99": 648.0,
+      "max": 1010.0,
+      "skew": 2.627597314143903,
+      "kurtosis": 9.84714070614234
+    },
+    "chars_by_class": {
+      "negative": {
+        "n": 30000.0,
+        "mean": 144.75516666666667,
+        "std": 140.4239986135505,
+        "min": 1.0,
+        "p05": 24.0,
+        "p25": 58.0,
+        "median": 99.0,
+        "p75": 180.0,
+        "p95": 422.0,
+        "p99": 744.0099999999984,
+        "max": 1004.0
+      },
+      "neutral": {
+        "n": 30000.0,
+        "mean": 125.88223333333333,
+        "std": 125.82707755537785,
+        "min": 1.0,
+        "p05": 16.0,
+        "p25": 45.0,
+        "median": 87.0,
+        "p75": 160.0,
+        "p95": 373.0,
+        "p99": 633.0099999999984,
+        "max": 1010.0
+      },
+      "positive": {
+        "n": 30000.0,
+        "mean": 119.7549,
+        "std": 108.99422928481385,
+        "min": 1.0,
+        "p05": 16.0,
+        "p25": 49.0,
+        "median": 89.0,
+        "p75": 154.0,
+        "p95": 325.0,
+        "p99": 549.0099999999984,
+        "max": 1008.0
+      }
+    },
+    "words_by_class": {
+      "negative": {
+        "n": 30000.0,
+        "mean": 22.464666666666666,
+        "std": 22.12373236007002,
+        "min": 1.0,
+        "median": 15.0,
+        "p95": 66.0,
+        "max": 192.0
+      },
+      "neutral": {
+        "n": 30000.0,
+        "mean": 19.591266666666666,
+        "std": 19.90968148689098,
+        "min": 1.0,
+        "median": 13.0,
+        "p95": 59.0,
+        "max": 193.0
+      },
+      "positive": {
+        "n": 30000.0,
+        "mean": 17.9813,
+        "std": 17.039601772859,
+        "min": 0.0,
+        "median": 13.0,
+        "p95": 50.0,
+        "max": 174.0
+      }
+    }
+  },
+  "lexical": {
+    "top_tokens_overall": [
+      {
+        "Токен": "не",
+        "Частота": 81929
+      },
+      {
+        "Токен": "на",
+        "Частота": 55225
+      },
+      {
+        "Токен": "очень",
+        "Частота": 29228
+      },
+      {
+        "Токен": "но",
+        "Частота": 25573
+      },
+      {
+        "Токен": "размер",
+        "Частота": 20016
+      },
+      {
+        "Токен": "что",
+        "Частота": 16197
+      },
+      {
+        "Токен": "как",
+        "Частота": 14273
+      },
+      {
+        "Токен": "товар",
+        "Частота": 13322
+      },
+      {
+        "Токен": "качество",
+        "Частота": 13311
+      },
+      {
+        "Токен": "продавец",
+        "Частота": 13095
+      },
+      {
+        "Токен": "деньги",
+        "Частота": 13073
+      },
+      {
+        "Токен": "за",
+        "Частота": 12619
+      },
+      {
+        "Токен": "по",
+        "Частота": 12475
+      },
+      {
+        "Токен": "так",
+        "Частота": 10889
+      },
+      {
+        "Токен": "все",
+        "Частота": 9523
+      },
+      {
+        "Токен": "это",
+        "Частота": 8720
+      },
+      {
+        "Токен": "доставка",
+        "Частота": 8406
+      },
+      {
+        "Токен": "то",
+        "Частота": 8263
+      },
+      {
+        "Токен": "заказ",
+        "Частота": 8051
+      },
+      {
+        "Токен": "ткань",
+        "Частота": 7448
+      }
+    ],
+    "tfidf_top_terms_by_class": {
+      "negative": [
+        {
+          "Токен": "деньги",
+          "Средний TF-IDF": 0.053650849114750244
+        },
+        {
+          "Токен": "товар",
+          "Средний TF-IDF": 0.050534678806541215
+        },
+        {
+          "Токен": "вернули",
+          "Средний TF-IDF": 0.04193768801499213
+        },
+        {
+          "Токен": "на",
+          "Средний TF-IDF": 0.03316320399150707
+        },
+        {
+          "Токен": "продавец",
+          "Средний TF-IDF": 0.032604387648930824
+        },
+        {
+          "Токен": "пришёл",
+          "Средний TF-IDF": 0.03157876243599752
+        },
+        {
+          "Токен": "пришел",
+          "Средний TF-IDF": 0.0275411470816128
+        },
+        {
+          "Токен": "очень",
+          "Средний TF-IDF": 0.027255811334258532
+        },
+        {
+          "Токен": "так",
+          "Средний TF-IDF": 0.027091709752840223
+        },
+        {
+          "Токен": "заказ",
+          "Средний TF-IDF": 0.02631577780652065
+        },
+        {
+          "Токен": "спор",
+          "Средний TF-IDF": 0.026231602965236585
+        },
+        {
+          "Токен": "что",
+          "Средний TF-IDF": 0.02198824747768595
+        }
+      ],
+      "neutral": [
+        {
+          "Токен": "на",
+          "Средний TF-IDF": 0.044625263723035415
+        },
+        {
+          "Токен": "очень",
+          "Средний TF-IDF": 0.03957279014667041
+        },
+        {
+          "Токен": "но",
+          "Средний TF-IDF": 0.03250469041418662
+        },
+        {
+          "Токен": "размер",
+          "Средний TF-IDF": 0.03144037887130242
+        },
+        {
+          "Токен": "качество",
+          "Средний TF-IDF": 0.02612616505345812
+        },
+        {
+          "Токен": "как",
+          "Средний TF-IDF": 0.019411455818734165
+        },
+        {
+          "Токен": "деньги",
+          "Средний TF-IDF": 0.019113966423722026
+        },
+        {
+          "Токен": "товар",
+          "Средний TF-IDF": 0.01899104986230438
+        },
+        {
+          "Токен": "по",
+          "Средний TF-IDF": 0.01857261616092158
+        },
+        {
+          "Токен": "ткань",
+          "Средний TF-IDF": 0.017061356637714315
+        },
+        {
+          "Токен": "соответствует",
+          "Средний TF-IDF": 0.016777168966407404
+        },
+        {
+          "Токен": "что",
+          "Средний TF-IDF": 0.016681127755038622
+        }
+      ],
+      "positive": [
+        {
+          "Токен": "на",
+          "Средний TF-IDF": 0.048409386653761245
+        },
+        {
+          "Токен": "очень",
+          "Средний TF-IDF": 0.040445278022636005
+        },
+        {
+          "Токен": "спасибо",
+          "Средний TF-IDF": 0.03946949243265981
+        },
+        {
+          "Токен": "качество",
+          "Средний TF-IDF": 0.032224302775439854
+        },
+        {
+          "Токен": "размер",
+          "Средний TF-IDF": 0.03143996486344138
+        },
+        {
+          "Токен": "доставка",
+          "Средний TF-IDF": 0.030945453769631683
+        },
+        {
+          "Токен": "супер",
+          "Средний TF-IDF": 0.028733049729435543
+        },
+        {
+          "Токен": "все",
+          "Средний TF-IDF": 0.02711377223524543
+        },
+        {
+          "Токен": "но",
+          "Средний TF-IDF": 0.025751992889244003
+        },
+        {
+          "Токен": "отлично",
+          "Средний TF-IDF": 0.02440318129060289
+        },
+        {
+          "Токен": "за",
+          "Средний TF-IDF": 0.02380899608858893
+        },
+        {
+          "Токен": "хорошо",
+          "Средний TF-IDF": 0.02344351892382606
+        }
+      ]
+    },
+    "negation_reviews": 50087,
+    "negation_share_pct": 55.65,
+    "language": {
+      "Средняя доля кириллицы": 0.79,
+      "Средняя доля латиницы": 0.013,
+      "Отзывов без кириллицы": 1262.0,
+      "Отзывов без кириллицы вне mojibake": 1243.0,
+      "Отзывов с mojibake": 19.0,
+      "Отзывов с URL": 128.0,
+      "Отзывов с цифрами": 31874.0
+    }
+  },
+  "text_features_medians_by_class": {
+    "negative": {
+      "char_len": 99.0,
+      "word_count_ws": 15.0,
+      "n_exclam": 0.0,
+      "n_question": 0.0,
+      "n_digits": 0.0,
+      "upper_ratio": 0.016129032258064516,
+      "latin_ratio": 0.0
+    },
+    "neutral": {
+      "char_len": 87.0,
+      "word_count_ws": 13.0,
+      "n_exclam": 0.0,
+      "n_question": 0.0,
+      "n_digits": 0.0,
+      "upper_ratio": 0.016,
+      "latin_ratio": 0.0
+    },
+    "positive": {
+      "char_len": 89.0,
+      "word_count_ws": 13.0,
+      "n_exclam": 0.0,
+      "n_question": 0.0,
+      "n_digits": 0.0,
+      "upper_ratio": 0.022388059701492536,
+      "latin_ratio": 0.0
+    }
+  },
+  "optional_svd": {
+    "sample_size": 10000,
+    "explained_variance_2d": 0.02660589578012156,
+    "explained_variance_2d_pct": 2.66
+  },
+  "artifacts": [
+    "reports\\figures\\01_class_balance.png",
+    "reports\\figures\\02_text_length_hist.png",
+    "reports\\figures\\03_text_length_by_class.png",
+    "reports\\figures\\04_top_tokens_overall.png",
+    "reports\\figures\\05_tfidf_terms_by_class.png",
+    "reports\\figures\\06_text_features_by_class.png",
+    "reports\\figures\\07_tfidf_svd.png"
+  ]
+}
